@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", serif;
+}
+
+a, a:hover, a:focus, a:active {
+    color: #5CDB95;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #5CDB95;
+}
+
+.header--nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 37px 227px;
+}
+
+.header--nav h1 {
+    font-size: 35pt;
+    color: #fefefe;
+    font-weight: 800;
+}
+
+.header--nav__callToAction {
+    height: 62px;
+    width: 286px;
+    background-color: #5CDB95;
+    color: #3c2ba3;
+    font-weight: 600;
+    font-size: 19pt;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-radius: 15px;
+}
+
+.header--nav__callToAction:hover {
+    height: 62px;
+    width: 286px;
+    background-color: #fefefe;
+    color: #3c2ba3;
+    font-weight: 600;
+    font-size: 19pt;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-radius: 15px;
+}
+
+.custom--container {
+    display: flex;
+    flex-direction: row;
+    padding: 37px 227px 150px 227px;
+}
+
+.floating--image{
+    animation: float 6s ease-in-out infinite;
+}
+
+.custom--container--slogan {
+    padding: 0 20pt;
+    font-weight: 800;
+    color: #fefefe;
+}
+
+.custom--container--slogan h2 {
+    font-size: 60pt;
+    font-weight: 800;
+}
+
+.custom--container--slogan p {
+    font-size: 20pt;
+}
+
+.typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #3c2ba3; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation:
+            typing 3s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+
+/*-- FIN HEADER --*/
+
+.description--first {
+    width: 100%;
+    color: #3c2ba3;
+}
+
+.description--custom--container {
+    display: flex;
+    flex-direction: column;
+    padding: 37px 227px 50px 227px;
+}
+
+.description--first--title {
+    font-size: 40pt;
+    color: #EDF5E1;
+}
+
+.description--first p {
+    font-size: 17pt;
+    font-weight: 600;
+}
+
+.description--first--row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.description--first--row--article {
+    width: 15%;
+}
+
+.description--first--row--article p {
+    font-size: 12pt;
+}
+
+a.badge {
+    font-size: 30pt;
+    background-color: #5CDB95;
+    color: #3c2ba3;
+}
+
+a.badge:hover {
+    font-size: 30pt;
+    background-color: #5CDB95;
+    color: #3c2ba3;
+}
+
+footer {
+    background-color: #282828;
+    height: 30vh;
+    width: 100%;
+}
+
+/*-- KEYFRAMES --*/
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #3c2ba3; }
+}
